@@ -1,6 +1,10 @@
 #!/usr/bin/ruby -w
 #
-# Minesweeper
+# minesweeper.rb
+#
+# A minesweeper clone for *nix consoles
+#
+# (c) 2008 Daniel Fone
 #
 require 'rubygems';
 require 'termios';
