@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/env ruby
 #
 # minesweeper.rb
 #
@@ -6,7 +6,6 @@
 #
 # (c) 2008 Daniel Fone
 #
-require 'rubygems';
 require 'termios';
 require 'terminfo';
 
@@ -304,15 +303,15 @@ begin
     currentSq.select;
       
     begin
-      key = $stdin.getc;
+      key = $stdin.getbyte;
     rescue Interrupt
       exit;
     end
     
     if key == 27 then
       # Grab our control chars
-      key += $stdin.getc;
-      key += $stdin.getc;
+      key += $stdin.getbyte;
+      key += $stdin.getbyte;
       if key == 183 and y > 0 then # Up
         y -= 1;
       elsif key == 184 and y < height-1 then # Down

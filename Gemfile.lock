@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby-terminfo (0.1.1)
+    ruby-termios (1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-terminfo
+  ruby-termios
+
+BUNDLED WITH
+   1.16.1
